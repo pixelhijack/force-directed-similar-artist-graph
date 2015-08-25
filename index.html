@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script data-main="index" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.min.js"></script>
+  </head>
+
+  <body>
+    <div class="concept">
+    <form id="search">
+      <input type="text" action="method:post" placeholder="Try your favourite artist"/>
+    </form>
+    <hr>
+      <h1><b>Concept </b>| Last.fm similar artist discovery with D3.js force directed graph modelling</h1>
+      <ol>
+        <li>
+          Search artist, pull Last.fm API for similar artists. 
+          Last.fm will give you the similarity correlation ratio as "match" in the JSON.
+        </li>
+        <li>
+          Render a D3.js force directed graph layout by passing the match data. 
+          Implement drag functionality with corresponding physical modelling changes on every tick event of D3
+        </li>
+        <li>
+          Use mock data first to test your model.
+        </li>
+        <li class="todo">
+          Listen for view interactions, update model and re-render the force layout. 
+          Clicking on an artist should pull Last.fm again for similar artists of that node and populate the graph with new model data
+        </li>
+        <li class="todo">
+          When adding new nodes, loop through previous ones and merge new elements, linking the edges on common similarities.
+        </li>
+      </ol>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,64 @@
+/* Styles go here */
+
+body{
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+  box-sizing: border-box;
+}
+h1{
+  font-weight: 100;
+}
+
+ svg {
+      border: 1px solid #ccc;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+svg rect {
+    shape-rendering: crispedges;
+}
+
+text{
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+  font-size: 12px;
+  font-weight: bold;
+}
+.gnode {
+  cursor:pointer;
+  transition: fill .66s ease-in-out;
+}
+.gnode:hover { }
+.gnode:hover text{
+  fill: rgba(26, 188, 156,.8);
+}
+.img{
+  display: block;
+  border-radius: 100px;
+}
+.node {
+    stroke: rgba(0,0,0,.1);
+    stroke-width: 2px;
+    fill: rgba(0,0,0,.1);
+    z-index:100;
+}
+
+.link {
+    stroke: rgba(0,0,0,.1);
+    stroke-width: 2px;
+    z-index:0;
+}
+
+.concept .todo{
+  opacity: .33;
+}
+
+#search input{
+  margin: 2em 0;
+  height: 2em;
+  line-height: 2em;
+}
+
+
